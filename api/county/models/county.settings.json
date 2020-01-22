@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "counties",
+  "info": {
+    "name": "county"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "via": "counties",
+      "model": "state"
+    },
+    "properties": {
+      "via": "county",
+      "collection": "property"
+    }
+  }
+}

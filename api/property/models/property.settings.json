@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "properties",
+  "info": {
+    "name": "property"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "property_address": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "property_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "land_or_building": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "model": "state",
+      "via": "properties"
+    },
+    "county": {
+      "model": "county",
+      "via": "properties"
+    },
+    "auction_id": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "photo_link": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    }
+  }
+}
