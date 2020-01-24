@@ -41,6 +41,16 @@
     },
     "owner_name": {
       "type": "string"
+    },
+    "users_up_for_reviews": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "up_for_reviews"
+    },
+    "users_favorites": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "favorites"
     }
   }
 }
