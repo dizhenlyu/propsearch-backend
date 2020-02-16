@@ -51,6 +51,15 @@
       "plugin": "users-permissions",
       "collection": "user",
       "via": "favorites"
+    },
+    "homes_url": {
+      "type": "string"
+    },
+    "homefacts_url": {
+      "type": "string"
+    },
+    "xome_url": {
+      "type": "string"
     }
   }
 }
