@@ -60,6 +60,25 @@
     },
     "xome_url": {
       "type": "string"
+    },
+    "min_bid": {
+      "type": "decimal"
+    },
+    "homes_estimate": {
+      "type": "integer",
+      "default": 0
+    },
+    "homefacts_estimate": {
+      "type": "integer",
+      "default": 0
+    },
+    "xome_estimate": {
+      "type": "integer",
+      "default": 0
+    },
+    "average_estimate": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
